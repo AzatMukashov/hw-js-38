@@ -7,7 +7,10 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "lint-fix": "eslint . --fix",
+    "preview": "vite preview",
+    "format:check": "npx prettier . --check",
+    "format": "npx prettier . --write"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.3.0",
