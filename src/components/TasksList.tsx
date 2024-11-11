@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { AppDispatch, RootState } from '../app/store.ts';
-import { fetchTasks } from '../app/tasksSlice.ts';
-import TaskItem from './TaskItem.tsx';
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { AppDispatch, RootState } from "../app/store.ts";
+import { fetchTasks } from "../app/tasksSlice.ts";
+import TaskItem from "./TaskItem.tsx";
 
 const TasksList: React.FC = () => {
   const dispatch: AppDispatch = useDispatch();
@@ -18,7 +18,7 @@ const TasksList: React.FC = () => {
       ) : (
         <ul>
           {tasks.map((task) => (
-            <TaskItem key={task.id} task={task}/>
+            <TaskItem key={task.id} task={task} />
           ))}
         </ul>
       )}
